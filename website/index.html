@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Journal App</title>
+  </head>
+  <body>
+    <div class="main">
+      <dspiv class="heading">
+        <h1>My Weather Journal</h1>
+      </dspiv>
+      <div class="form-card-wrapper">
+        <div class="form-card">
+          <div class="city">
+            <label for="zip">Enter City</label>
+            <br />
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Enter your City"
+            />
+          </div>
+          <div class="mood">
+            <label for="mood">How are you feeling today?</label>
+            <br />
+            <textarea
+              name="mood"
+              id="mood"
+              placeholder="Enter how you are feeling today e.g. Bold & Confident"
+              rows="5"
+              cols="62"
+            ></textarea>
+          </div>
+          <div class="submit">
+            <button class="send" type="submit">Get Weather Deets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details-card"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

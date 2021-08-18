@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.heading h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.form-card-wrapper, .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    width: 700px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 9px 51px -25px rgba(0,0,0,0.75);
+    background-color: #D90429;
+    color: #FAA916;
+}
+
+.city {
+    padding: 15px 30px;
+}
+
+.mood {
+    padding: 0 30px;
+}
+
+.city label, .mood label {
+    font-size: 1.5rem;
+}
+
+.city input {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.mood textarea {
+    font-size: 1rem;
+}
+
+.submit {
+    padding: 30px;
+}
+
+button {
+    background-color: #FAA916;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+}
