@@ -25,7 +25,7 @@ body {
     color: #FAA916;
 }
 
-.city {
+.the-city {
     padding: 15px 30px;
 }
 
@@ -33,11 +33,11 @@ body {
     padding: 0 30px;
 }
 
-.city label, .mood label {
+.the-city label, .mood label {
     font-size: 1.5rem;
 }
 
-.city input {
+.the-city input {
     width: 100%;
     height: 40px;
     font-size: 1rem;
@@ -57,4 +57,21 @@ button {
     height: 40px;
     width: 100%;
     font-size: 1rem;
+}
+
+.entryHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+    border: 1px solid #FAA916;
+    border-radius: 5px;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.your-city-text {
+    font-size: 20px;
+    color: #D90429
 }

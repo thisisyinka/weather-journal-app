@@ -20,34 +20,50 @@
       </dspiv>
       <div class="form-card-wrapper">
         <div class="form-card">
-          <div class="city">
-            <label for="zip">Enter City</label>
+          <div class="the-city">
+            <label for="city">Enter your city</label>
             <br />
             <input
               type="text"
-              name="city"
               id="city"
-              placeholder="Enter your City"
+              name="city"
+              placeholder="Enter your city"
             />
           </div>
           <div class="mood">
-            <label for="mood">How are you feeling today?</label>
+            <label for="feelings">How are you feeling today?</label>
             <br />
             <textarea
-              name="mood"
-              id="mood"
+              name="feelings"
+              id="feelings"
               placeholder="Enter how you are feeling today e.g. Bold & Confident"
               rows="5"
               cols="62"
             ></textarea>
           </div>
           <div class="submit">
-            <button class="send" type="submit">Get Weather Deets</button>
+            <button id="send" type="submit">Get Weather Deets</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="details-card"></div>
+    <div class="details">
+      <div class="your-city">
+        <p class="your-city-text"></p>
+      </div>
+      <div class="date">
+        <p class="date-text"></p>
+      </div>
+      <div class="main">
+        <p class="main-text"></p>
+      </div>
+      <div class="temp">
+        <p class="temperature-text"></p>
+      </div>
+      <div class="content">
+        <p class="feeling-text"></p>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
