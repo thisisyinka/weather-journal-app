@@ -12,10 +12,9 @@ const baseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
 const apiKey = 'PLEASE REPLACE WITH YOUR OPENWEATHER API KEY';
 
 
-//Date
+//The Date
 const today = new Date();
 const theDate = `${today.getDate()}/${today.getMonth()+1}/${today.getFullYear()}`;
-
 
 
 button.addEventListener('click', function(e) {
@@ -26,9 +25,7 @@ button.addEventListener('click', function(e) {
         .then(function(data) {
             //convert from Kelvin to Celsius
             const toCelsius = (data.main.temp - 273.15)
-            console.log(toCelsius)
             const temperature = Math.round(toCelsius);
-            console.log(temperature)
             const mood = yourFeelings
             const type = data.weather.map(param => param.main)
             postData('/newEntry', {
@@ -58,7 +55,7 @@ const getTheWeatherData = async (baseURL, city, key) => {
 }
 
 
-// Boilerplate
+// Boilerplate from course video
 const postData = async(url = '', data) => {
     const response = await fetch(url, {
         method: 'POST',
