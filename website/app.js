@@ -79,11 +79,11 @@ const updateUI = async () => {
     try {
         const weatherData = await request.json();
         detailsDiv.classList.add('entryHolder');
-        cityContent.textContent = weatherData.thecity;
-        dateContent.textContent = `Today\'s date: ${weatherData.date}`;
-        mainContent.textContent = `Type of Weather: ${weatherData.main}`;
-        tempContent.textContent = `The temperature is ${weatherData.temp}°C`;
-        feelingContent.textContent = `I\'m feeling ${weatherData.feeling}`;
+        cityContent.innerHTML = weatherData.thecity;
+        dateContent.innerHTML = `Today\'s date: ${weatherData.date}`;
+        mainContent.innerHTML = `Type of Weather: ${weatherData.main}`;
+        tempContent.innerHTML = `The temperature is ${weatherData.temp}°C`;
+        feelingContent.innerHTML = `I\'m feeling ${weatherData.feeling}`;
     } catch (error) {
         console.log('The UI could not be updated', error);
     }
